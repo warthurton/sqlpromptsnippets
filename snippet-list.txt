@@ -16,6 +16,7 @@ atet    Enable a trigger on table
 ateta   Enable all triggers on table
 be      BEGIN...END
 bt      BEGIN TRANSACTION
+cache   Query cache plan
 ccc     CREATE CELL CALCULATION fragment
 cci     Create non-unique clustered index
 cdb     CREATE DATABASE
