@@ -27,6 +27,7 @@ cl      Create a new SQL Server login
 clrp    Create a CLR stored procedure
 cni     Create non-unique nonclustered index
 cp      Create a stored procedure
+csel    Comment selection with /* */
 csf     Create scalar function
 ct      Create a table
 cte     Create a new common table expression
@@ -58,6 +59,7 @@ ij      INNER JOIN fragment
 j       JOIN fragment
 inn     IS NOT NULL fragment
 is      Shortcut for INFORMATION_SCHEMA
+isna    ISNULL() wrapper
 isc     Column Information Grabber
 lin     Line
 linn    Double line with space for text comment
