@@ -59,7 +59,7 @@ ij      INNER JOIN fragment
 j       JOIN fragment
 inn     IS NOT NULL fragment
 is      Shortcut for INFORMATION_SCHEMA
-isna    ISNULL() wrapper
+isnas   ISNULL() wrapper with as selected text
 isc     Column Information Grabber
 lin     Line
 linn    Double line with space for text comment
@@ -93,6 +93,7 @@ today   CAST(GETDATE() as date) fragment
 uci     Unique Clustered Index
 w2      Execute sp_who2
 wdc     WITH (DATA_COMPRESSION = PAGE) fragment
+wn      WITH (NOLOCK)
 wt      WITH (TABLOCK) fragment
 xpfd    Retrieve free space on all fixed drives
 yell    Vent your frustration
