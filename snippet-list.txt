@@ -40,6 +40,7 @@ cv      Create a view
 cw      CASE WHEN
 dd      Drop a database
 dect    Declare and manage temp table variable
+decv    Declare variable
 df      DELETE FROM fragment
 dfn     Drop a function
 di      Drop an index
