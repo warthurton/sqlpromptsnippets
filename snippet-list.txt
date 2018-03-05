@@ -16,6 +16,7 @@ atet    Enable a trigger on table
 ateta   Enable all triggers on table
 be      BEGIN...END
 bt      BEGIN TRANSACTION
+cache   Query cache plan
 ccc     CREATE CELL CALCULATION fragment
 cci     Create non-unique clustered index
 cdb     CREATE DATABASE
@@ -26,6 +27,7 @@ cl      Create a new SQL Server login
 clrp    Create a CLR stored procedure
 cni     Create non-unique nonclustered index
 cp      Create a stored procedure
+csel    Comment selection with /* */
 csf     Create scalar function
 ct      Create a table
 cte     Create a new common table expression
@@ -57,6 +59,7 @@ ij      INNER JOIN fragment
 j       JOIN fragment
 inn     IS NOT NULL fragment
 is      Shortcut for INFORMATION_SCHEMA
+isnas   ISNULL() wrapper with as selected text
 isc     Column Information Grabber
 lin     Line
 linn    Double line with space for text comment
@@ -90,6 +93,7 @@ today   CAST(GETDATE() as date) fragment
 uci     Unique Clustered Index
 w2      Execute sp_who2
 wdc     WITH (DATA_COMPRESSION = PAGE) fragment
+wn      WITH (NOLOCK)
 wt      WITH (TABLOCK) fragment
 xpfd    Retrieve free space on all fixed drives
 yell    Vent your frustration

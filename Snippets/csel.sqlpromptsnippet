@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>csel</Title>
+      <Shortcut>csel</Shortcut>
+      <Description>Comment Selection</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[/*
+$CURSOR$
+$SELECTEDTEXT$
+
+*/]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

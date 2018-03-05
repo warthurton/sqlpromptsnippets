@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>cache</Title>
+      <Shortcut>cache</Shortcut>
+      <Description>Query plan cache</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>search_text</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[SELECT  *
+FROM
+        sys.dm_exec_cached_plans decp
+    INNER JOIN sys.dm_exec_query_stats deqs
+        ON deqs.plan_handle = decp.plan_handle
+    CROSS APPLY sys.dm_exec_sql_text(decp.plan_handle) dest
+    CROSS APPLY sys.dm_exec_query_plan(decp.plan_handle) deqp
+WHERE   dest.text LIKE '%$search_text$%'
+OPTION (RECOMPILE);]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
