@@ -41,6 +41,9 @@ curff   Boilerplate code for fast-forward read-only cursor
 cv      Create a view
 cw      CASE WHEN
 dd      Drop a database
+decc    Declare cursor
+dect    Declare and manage temp table variable
+decv    Declare variable
 df      DELETE FROM fragment
 dfn     Drop a function
 di      Drop an index
