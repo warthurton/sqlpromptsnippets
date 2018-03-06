@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>ss0</Title>
-      <Shortcut>ss0</Shortcut>
-      <Description>SELECT TOP (0) * FROM</Description>
+      <Title>isns</Title>
+      <Shortcut>isns</Shortcut>
+      <Description>ISNULL NUMBER: WRAP CURRENT SELECTION IN ISNULL OPERATOR for a number, default to zero</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[SELECT TOP (0) * FROM ]]></Code>
+      <Code Language="sql"><![CDATA[ISNULL($SELECTEDTEXT$, 0)]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
