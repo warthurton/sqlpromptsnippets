@@ -14,6 +14,7 @@ atdt    Disable a trigger on table
 atdta   Disable all triggers on table
 atet    Enable a trigger on table 
 ateta   Enable all triggers on table
+avg		Average wrapper with selected text
 be      BEGIN...END
 bt      BEGIN TRANSACTION
 cache   Query cache plan
@@ -97,6 +98,7 @@ ssf     SELECT * FROM fragment
 ssf2    SELECT * FROM fragment, formatted nicely with tabs and newline.
 sst     SELECT TOP 1000 * FROM
 st100   SELECT top 100 rows
+sum		SUM() wrapper with selected text
 sxa     Change the current XACT_ABORT setting
 tc      TRY ... CATCH fragment
 today   CAST(GETDATE() as date) fragment

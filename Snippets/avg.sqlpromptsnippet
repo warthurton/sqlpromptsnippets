@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>avg</Title>
+      <Shortcut>avg</Shortcut>
+      <Description>AVG() wrapper with selected text</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[AVG($SELECTEDTEXT$) $SELECTEDTEXT$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

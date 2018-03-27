@@ -4,7 +4,7 @@
     <Header>
       <Title>trim</Title>
       <Shortcut>trim</Shortcut>
-      <Description />
+      <Description>Full Trim</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[LTRIM(RTRIM($CURSOR$))]]></Code>
+      <Code Language="sql"><![CDATA[LTRIM(RTRIM($SELECTEDTEXT$))]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
