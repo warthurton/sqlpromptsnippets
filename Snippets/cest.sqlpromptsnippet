@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>num</Title>
-      <Shortcut>num</Shortcut>
-      <Description>Format a big number into a readable format</Description>
+      <Title>cest</Title>
+      <Shortcut>cest</Shortcut>
+      <Description>Cast to EDT using DateTime Offset</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[FORMAT($CURSOR$,'#,##0')]]></Code>
+      <Code Language="sql"><![CDATA[cast((cast($PASTE$ AS DATETIMEOFFSET) AT TIME ZONE 'Eastern Standard Time') AS SMALLDATETIME)]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
