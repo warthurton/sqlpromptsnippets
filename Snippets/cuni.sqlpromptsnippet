@@ -11,9 +11,26 @@
       </SnippetTypes>
     </Header>
     <Snippet>
-      <Declarations />
-      <Code Language="sql"><![CDATA[CREATE UNIQUE NONCLUSTERED INDEX $CURSOR$
-ON -- table | view ( column1 [ ASC | DESC ], ..., columnN ( ASC | DESC ] )
+      <Declarations>
+        <Literal>
+          <ID>owner</ID>
+          <ToolTip />
+          <Default>[schema].[index_name]</Default>
+        </Literal>
+        <Literal>
+          <ID>column</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>index_name</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[CREATE UNIQUE NONCLUSTERED INDEX $index_name$
+ON $owner$ ( $column$ )
+--ON -- table | view ( column1 [ ASC | DESC ], ..., columnN ( ASC | DESC ] )
 --WITH PAD_INDEX
 --    | FILLFACTOR = fillfactor
 --    | IGNORE_DUP_KEY

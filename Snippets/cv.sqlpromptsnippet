@@ -4,18 +4,24 @@
     <Header>
       <Title>cv</Title>
       <Shortcut>cv</Shortcut>
-      <Description>Create a view</Description>
+      <Description>Create view</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
     </Header>
     <Snippet>
-      <Declarations />
-      <Code Language="sql"><![CDATA[CREATE VIEW $CURSOR$
+      <Declarations>
+        <Literal>
+          <ID>view_name</ID>
+          <ToolTip />
+          <Default>[schema].[view_name]</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[CREATE VIEW $view_name$
 --WITH ENCRYPTION, SCHEMABINDING, VIEW_METADATA
 AS
-	SELECT /* query specification */
+    $SELECTEDTEXT$$CURSOR$
 -- WITH CHECK OPTION
 GO
 ]]></Code>

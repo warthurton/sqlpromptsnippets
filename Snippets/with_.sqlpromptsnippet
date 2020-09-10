@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>df</Title>
-      <Shortcut>df</Shortcut>
-      <Description>DELETE FROM fragment</Description>
+      <Title>with_</Title>
+      <Shortcut>with_</Shortcut>
+      <Description>Wrap With _Name</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -13,12 +13,18 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>table_name</ID>
+          <ID>CTEName</ID>
           <ToolTip />
-          <Default>[schema].[table_name]</Default>
+          <Default />
         </Literal>
       </Declarations>
-      <Code Language="sql"><![CDATA[DELETE FROM $table_name$ WHERE $CURSOR$]]></Code>
+      <Code Language="sql"><![CDATA[WITH _$CTEName$
+AS
+(
+	$SELECTEDTEXT$
+)
+
+$CURSOR$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

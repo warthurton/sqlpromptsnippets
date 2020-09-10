@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>df</Title>
-      <Shortcut>df</Shortcut>
-      <Description>DELETE FROM fragment</Description>
+      <Title>cvc</Title>
+      <Shortcut>cvc</Shortcut>
+      <Description>Cast VARCHAR</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -13,12 +13,12 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>table_name</ID>
+          <ID>lenght</ID>
           <ToolTip />
-          <Default>[schema].[table_name]</Default>
+          <Default />
         </Literal>
       </Declarations>
-      <Code Language="sql"><![CDATA[DELETE FROM $table_name$ WHERE $CURSOR$]]></Code>
+      <Code Language="sql"><![CDATA[CAST ($SELECTEDTEXT$ AS VARCHAR($lenght$))]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

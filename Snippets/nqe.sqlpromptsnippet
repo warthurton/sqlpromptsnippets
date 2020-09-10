@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>nqe</Title>
+      <Shortcut>nqe</Shortcut>
+      <Description>New Query with Protection Error</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[RAISERROR ('Did you mean to run the whole thing?', 20, 1) WITH LOG;
+GO
+
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

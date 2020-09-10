@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>cbit</Title>
+      <Shortcut>cbit</Shortcut>
+      <Description>Convert string to Bit</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[CAST(IIF($SELECTEDTEXT$ = N'False', 0, 1) AS BIT) $SELECTEDTEXT$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -4,34 +4,43 @@
     <Header>
       <Title>curff</Title>
       <Shortcut>curff</Shortcut>
-      <Description>Boilerplate code for fast-forward read-only cursor</Description>
+      <Description>Fast-forward read-only cursor</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
     </Header>
     <Snippet>
-      <Declarations />
-      <Code Language="sql"><![CDATA[DECLARE /* variables */
+      <Declarations>
+        <Literal>
+          <ID>cursor_name</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>select_statement</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[/* declare variables */
+DECLARE @variable INT
 
-DECLARE $CURSOR$ CURSOR FAST_FORWARD READ_ONLY FOR
-/* SELECT statement */
+DECLARE $cursor_name$ CURSOR FAST_FORWARD READ_ONLY FOR $select_statement$
 
-OPEN /* cursor name */
+OPEN $cursor_name$
 
-FETCH NEXT FROM /* cursor name */ INTO /* variables */
+FETCH NEXT FROM $cursor_name$ INTO @variable
 
 WHILE @@FETCH_STATUS = 0
 BEGIN
+    $CURSOR$
 
-/* cursor logic */
-
-FETCH NEXT FROM /* cursor name */ INTO /* variables */
-
+    FETCH NEXT FROM $cursor_name$ INTO @variable
 END
 
-CLOSE /* cursor name */
-DEALLOCATE /* cursor name */]]></Code>
+CLOSE $cursor_name$
+DEALLOCATE $cursor_name$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

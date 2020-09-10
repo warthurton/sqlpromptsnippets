@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>isnas</Title>
-      <Shortcut>isnas</Shortcut>
-      <Description>ISNULL as</Description>
+      <Title>top10</Title>
+      <Shortcut>top10</Shortcut>
+      <Description>Top 10</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[isnull($SELECTEDTEXT$, $SELECTIONSTART$$SELECTEDTEXT$$SELECTIONEND$) AS $SELECTEDTEXT$]]></Code>
+      <Code Language="sql"><![CDATA[TOP (10)]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
